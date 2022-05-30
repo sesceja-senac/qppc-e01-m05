@@ -121,12 +121,17 @@ classes
 .flip-card {
     margin: 20px auto;
     background-color: white;
-    width: Calc(300px * 1.5);
-    height: Calc(331px * 1.5);
+   /* width: Calc(300px * 1.5);
+    height: Calc(331px * 1.5);*/
     border: 4px solid #f1f1f1;
     perspective: 1000px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+.flip01{
+    width: Calc(648px * 1);
+    height: Calc(896px * 1);
 }
 
 .flip-card-content {
@@ -151,13 +156,17 @@ classes
 }
 
 .flip-card-front {
-    background-color: #bbb;
+    /*background-color: #bbb;*/
     color: black;
 }
 .flip-card-back {
-    background-color: dodgerblue;
+    /*background-color: dodgerblue;*/
     color: white;
     transform: rotateY(180deg);
+}
+
+.borda-img{
+    border: 2px solid whitesmoke;
 }
 
 .refletir.inverse::before{
@@ -191,6 +200,10 @@ classes
 
 .icone.atencao::before{
     background-image: url(../img/icone_importante.png);
+   
+    height: 95px;   
+    top: -20px;
+    left: -48px;
 }
 
 
@@ -228,14 +241,39 @@ classes
 }
 
 
+.bloco-divisor{
+    background-color: darkslategrey;
+    min-height: 90vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bloco-divisor.img01{
+    background-image: url(../figuras/figura_sugestao_01.png);
+}
+.estilo2.bf-transparent{
+    padding-top: 15px !important;
+}
+.estilo1.bf-transparent{
+    padding-top: 85px !important;
+}
+
+.estilo2.bf-transparent::before{
+    background-color: transparent !important;
+    margin-top: -113px;
+}
+.estilo1.bf-transparent::before{
+    background-color: transparent !important;
+    margin-top: -274px;
+}
 
 @media screen and (max-width:1366px){
     .rellax{
         max-width: 208px;
     }
-    .flip-card {   
-        width: Calc(300px * 1.2);
-        height: Calc(331px * 1.2);      
+    .flip01{
+        width: Calc(648px * .8);
+        height: Calc(896px * .8);
     }
 
     .parallax-esquerda img,
