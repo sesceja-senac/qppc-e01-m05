@@ -1,0 +1,305 @@
+p.icone{
+    padding-left: 50px;
+}
+
+
+ol.romana{
+    list-style-type:upper-roman;
+}
+
+marker{
+    background-color: yellow;
+    padding: 5px;
+}
+
+
+.rotateme{
+    writing-mode: vertical-lr;
+    -ms-writing-mode: tb-rl;
+    transform: rotate(180deg);
+}
+
+
+.citacao {
+    background-color: #113f58;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10vw;
+    padding-left: 2vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bloco .citacao{
+    border: 2px solid white;
+}
+
+.bloco .caixa{
+   box-shadow: 0 0 0 10px white;
+}
+/*
+.rellax{
+    z-index: 2;
+    pointer-events: none;
+    touch-action: none;
+    -ms-touch-action: none;
+}
+*/
+h3{
+    font-size: 1.6rem;
+  }
+  h4{
+    font-size: 1.3rem
+  }
+  h5{
+    font-size: 1.2rem
+  }
+
+  h3,h4,h5{
+      font-weight: bold;
+  }
+
+  a[data-bs-toggle="tooltip"]{
+    text-decoration: none;
+    border: 1px dashed #00838D;
+    padding: 2px 4px;
+    color: #00838D;
+   
+  }
+
+a.inverter[data-bs-toggle="tooltip"]{
+      border-color: white;
+      color: white;
+  }
+ 
+
+figure figcaption, .legenda, .legenda-imagem, .legenda-imagem p{
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+/*variavel pra ter um valor inicial de escala...*/
+:root{
+    --mult: 2.0
+}
+
+.icone.anotar{
+    padding-left: 90px;
+}
+.icone.anotar::before{
+    background-image: url(../img/icone_nota.png);
+    background-size: contain;
+    background-position: center;
+
+}
+
+.slideshow01-tela{
+    border: 3px solid #00838D;
+    padding:10px;
+    min-height: 350px;
+}
+
+/*
+Flip card
+estrutura exemplo:
+ <div class="flip-card" data-aos="zoom-in">
+    <div class="flip-card-content">
+        <div class="flip-card-front">
+            <img src="assets/img/painel_multiplicadores.png" class="img-fluid" alt="">
+        </div>
+        <div class="flip-card-back">
+            <img src="assets/img/painel_multiplicadores_hover.png" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+
+classes
+*/
+
+.flip-card {
+    margin: 20px auto;
+    background-color: white;
+    width: Calc(300px * 1.5);
+    height: Calc(331px * 1.5);
+    border: 4px solid #f1f1f1;
+    perspective: 1000px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.flip-card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-content {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.refletir.inverse::before{
+    background-image: url(../../../../assets/img/ico-refletir-b.png);
+}
+
+/*botoes economia*/
+.pattern-economia{
+    background-image: url(../img/economiacriativa_pattern.png);
+    background-position: center;
+}
+
+.icone::before{
+    background-size: contain;
+}
+.icone.dica::before{
+    background-image: url(../img/ico-dica.png);
+}
+
+.icone.praticar::before{
+    background-image: url(../img/icone_napratica.png);
+}
+
+.icone.refletir::before{
+    background-image: url(../img/icone_pararefletir.png);
+}
+
+.icone.saiba-mais::before{
+    background-image: url(../img/icone_saibamais.png);
+}
+
+.icone.atencao::before{
+    background-image: url(../img/icone_importante.png);
+}
+
+
+/*classes para o parallax*/
+.parallax-esquerda, .parallax-direita{
+    position: relative;
+    max-width: 25vw; 
+    overflow: hidden;
+}
+.parallax-esquerda{   
+    left: 0; 
+    float: left;   
+}
+.parallax-direita{ 
+    right: 0;  
+    float: right; 
+}
+.parallax-esquerda.top25,.parallax-direita.top25{
+    top: 25%;
+}
+.parallax-esquerda.top50,.parallax-direita.top50{
+    top: 50%;
+}
+.parallax-esquerda.top75,.parallax-direita.top75{
+    top: 75%;
+}
+.parallax-esquerda.top100,.parallax-direita.top100{
+    top: 100%;
+}
+.parallax-esquerda.content-left *,.parallax-direita.content-left *{
+    margin-left: -50%;
+}
+.parallax-esquerda.content-right *,.parallax-direita.content-right *{
+    margin-left: 50%;
+}
+
+
+
+@media screen and (max-width:1366px){
+    .rellax{
+        max-width: 208px;
+    }
+    .flip-card {   
+        width: Calc(300px * 1.2);
+        height: Calc(331px * 1.2);      
+    }
+
+    .parallax-esquerda img,
+    .parallax-direita img
+    {   
+        max-width: 100%;  
+    } 
+    .parallax-esquerda.content-left *,.parallax-direita.content-left *{
+        margin-left: initial
+    }
+    .parallax-esquerda.content-right *,.parallax-direita.content-right *{
+        margin-left: initial;
+    }
+
+}
+
+@media screen and (max-width:994px) {
+    .parallax-esquerda,
+    .parallax-direita
+    {   
+        display: none;
+    } 
+
+    #booklet{
+        overflow-x: hidden;
+    }  
+    .flip-card {   
+        width: Calc(300px * 1);
+        height: Calc(331px * 1);      
+    }
+
+
+}
+
+
+@media screen and (max-width: 700px){  
+    .carousel.sesc .carousel-item {
+        padding-left: 0;
+        padding-right: 0;
+    }  
+
+    .caixa.icone::before{
+        left: Calc(50% - 40px);
+        top: -30px;
+    }
+
+    .caixa.icone{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding: 10px;
+        padding-top: 90px;        
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .citacao{
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+    }   
+}
+
+

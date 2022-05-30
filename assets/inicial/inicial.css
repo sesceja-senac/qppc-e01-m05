@@ -1,0 +1,21 @@
+html,body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+   /* background-image: url(../inicial/tela_inicial_bg.png);*/
+}
+
+
+.h-lg-100{
+    height: 100%;    
+}
+
+
+@media screen and (max-width:994px){
+    .h-lg-100{
+        height: auto;      
+    }
+}
