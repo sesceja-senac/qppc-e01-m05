@@ -209,17 +209,17 @@ classes
 
 /*classes para o parallax*/
 .parallax-esquerda, .parallax-direita{
-    position: relative;
+    position: absolute;
     max-width: 25vw; 
     overflow: hidden;
 }
 .parallax-esquerda{   
     left: 0; 
-    float: left;   
+    /*float: left;   */
 }
 .parallax-direita{ 
     right: 0;  
-    float: right; 
+    /*float: right; */
 }
 .parallax-esquerda.top25,.parallax-direita.top25{
     top: 25%;
