@@ -908,7 +908,7 @@ figcaption {
 
 }
 .pagina a[data-bs-toggle="tooltip"]::after{
-  content: " [" attr(data-bs-original-title) "] ";
+  content: " [" attr(data-bs-title) "] ";
   display: inline;
 }
 

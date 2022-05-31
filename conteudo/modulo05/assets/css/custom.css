@@ -212,6 +212,7 @@ classes
     position: absolute;
     max-width: 25vw; 
     overflow: hidden;
+    z-index: 2;
 }
 .parallax-esquerda{   
     left: 0; 
@@ -246,8 +247,22 @@ classes
     min-height: 90vh;
     background-attachment: fixed;
     background-size: cover;
+    overflow: hidden;
+    position: relative;
 }
-
+/*
+.bloco-divisor::before{
+    content: "";
+    display: block;
+    width: 120vw;
+    height: 13%;
+    background-color: white;
+    position: absolute;
+    top: -4.5%;
+    transform: rotate(3deg);
+    z-index: 0;
+}
+*/
 .bloco-divisor.img01{
     background-image: url(../figuras/figura_sugestao_01.png);
 }
@@ -267,6 +282,21 @@ classes
     margin-top: -274px;
 }
 
+
+.modal-sesc .modal-title{
+    color: orange;
+    border-bottom: 2px dashed orange;
+    width: 100%;
+    padding-bottom: 8px;
+}
+.modal-sesc  .btn-close{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.modal-sesc .modal-body .container{
+    border-left: 2px solid orange;
+    padding-right: 40px;
+}
 @media screen and (max-width:1366px){
     .rellax{
         max-width: 208px;
