@@ -5,7 +5,9 @@ html,body{
     padding: 0;
     border: 0;
     overflow: hidden;
-   /* background-image: url(../inicial/tela_inicial_bg.png);*/
+    background-image: url(../inicial/background.png);
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -14,9 +16,133 @@ html,body{
 }
 
 
+.main-title{
+    padding: 20px;
+    background-color: #ff9700;
+    color: white;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 2.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.sub-title{
+    font-size: 1.2rem;
+    color: white;
+    display: inline-block;
+    max-width: 540px;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+.btn-inicial{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    background-color: #ff9700;
+    width: 100%;
+    text-align: right;
+    margin: 3px;
+    font-weight: bold;
+    transition: 150ms;
+}
+.bg-verde{
+    background-color: #00818a;
+}
+
+.btn-inicial:hover, .btn-inicial:focus{
+    border-right: 10px solid #ff9700;
+    background-color: #cfe4e5;
+    color: #0e7d84;
+}
+.imagens-titulo{
+    width: 750px;
+    /*border: 2px solid ff9700;*/
+    height: 600px;
+    background-image: url(../inicial/img_1_telainicial.png);
+    background-size: cover;
+    transition: 400ms;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
+}
+
+.polaroid-picture{
+    border: 8px solid white;
+    border-bottom: 56px solid white;
+}
+
+.imagens-titulo.bt01{
+    background-image: url(../inicial/img_2.png);
+    transition: 400ms;
+}
+.imagens-titulo.bt02{
+    background-image: url(../inicial/img_3.png);
+    transition: 400ms;
+}
+.imagens-titulo.bt03{
+    background-image: url(../inicial/img_4.png);
+    transition: 400ms;
+}
+.imagens-titulo.bt04{
+    background-image: url(../inicial/img_5.png);
+    transition: 400ms;
+}
+.imagens-titulo.bt05{
+    background-image: url(../inicial/img_6.png);
+    transition: 400ms;
+}
+.imagens-titulo.bt06{
+    background-image: url(../inicial/img_7.png);
+    transition: 400ms;
+}
+.imagens-titulo.bt07{
+    background-image: url(../inicial/img_8.png);
+    transition: 400ms;
+}
+.imagens-titulo.bt08{
+    background-image: url(../inicial/img_9.png);
+    transition: 400ms;
+}
+@media screen and (max-width:1440px){
+    .imagens-titulo{
+        width: Calc(750px * .95);
+        height: Calc(600px * .95);
+     }
+}
+@media screen and (max-width:1366px){
+    .main-title{
+        font-size: 2rem;
+    }
+    
+    .imagens-titulo{
+       width: Calc(750px * .80);
+       height: Calc(600px * .80);
+    }
+}
+
+@media screen and (max-width:1024px){
+    .imagens-titulo{
+        width: Calc(750px * .65);
+        height: Calc(600px * .65);      
+     }
+}
+
 
 @media screen and (max-width:994px){
     .h-lg-100{
         height: auto;      
+    }
+    html, body{
+        overflow-y: scroll;
+    }  
+    .imagens-titulo{
+        display: block;
+        margin: 10px auto;
+        width: 94vw;
+        height: Calc(94vw * 60/75);
+      
     }
 }

@@ -73,7 +73,10 @@ a.inverter[data-bs-toggle="tooltip"]{
       color: white;
   }
  
-
+.slide-sesc{
+    border: 4px solid #00838D;
+    padding: 15px;
+}
 figure figcaption, .legenda, .legenda-imagem, .legenda-imagem p{
     font-size: .9rem;
     margin-top: 1rem;
@@ -235,10 +238,12 @@ classes
     top: 100%;
 }
 .parallax-esquerda.content-left *,.parallax-direita.content-left *{
-    margin-left: -50%;
+   
+   margin-left: 0;
 }
 .parallax-esquerda.content-right *,.parallax-direita.content-right *{
-    margin-left: 50%;
+    
+    margin-left: -70%;
 }
 
 
