@@ -65,13 +65,15 @@ nav ul{
     height: 600px;
     background-image: url(../inicial/img_1_telainicial.png);
     background-size: cover;
-    transition: 400ms;  
+    transition: 400ms;      
 }
 
 .polaroid-picture{
     border: 8px solid white;
     border-bottom: 56px solid white;
     overflow: hidden;
+    width: fit-content;
+    background-color: white;
 }
 
 .imagens-titulo.bt01{
