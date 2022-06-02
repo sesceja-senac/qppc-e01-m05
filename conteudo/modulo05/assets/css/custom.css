@@ -311,6 +311,25 @@ classes
     border-radius: 10px;
 }
 
+
+.modais-etapas button{
+    border: 0;
+    background-color: transparent;
+    transition: 200ms;
+}
+.modais-etapas button:hover{
+    transform: scale(1.1);
+}
+
+ol.sesc{
+    list-style: none;
+    list-style-image: url(../img/marcador.png);
+}
+ol.sesc li{
+    margin-bottom: 5px;
+}
+
+
 @media screen and (max-width:1366px){
     .rellax{
         max-width: 208px;
