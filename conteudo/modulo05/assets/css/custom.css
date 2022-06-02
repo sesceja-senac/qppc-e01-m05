@@ -272,7 +272,7 @@ classes
 }
 */
 .bloco-divisor.img01{
-    background-image: url(../figuras/figura_sugestao_01.png);
+    background-image: url(../img/background.png);
 }
 .estilo2.bf-transparent{
     padding-top: 15px !important;
@@ -319,6 +319,8 @@ classes
 }
 .modais-etapas button:hover{
     transform: scale(1.1);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, .3);
+    border-radius: 6px;
 }
 
 ol.sesc{
