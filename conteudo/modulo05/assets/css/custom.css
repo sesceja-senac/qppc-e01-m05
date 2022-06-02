@@ -217,6 +217,9 @@ classes
     overflow: hidden;
     z-index: 2;
 }
+.parallax-esquerda img, .parallax-direita img{
+    max-width: 300px;
+}
 .parallax-esquerda{   
     left: 0; 
     /*float: left;   */

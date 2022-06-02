@@ -95,3 +95,17 @@
   .fbook .fpage.flipped:nth-child(even):hover {
     transform: rotateY(15deg);
   }
+
+/* CUSTOMIZANDO pra uma largura maxima mais perto do normal, usando proporçao de uma folha a4 */
+
+  .fbook .fpages {
+    width: 900px;
+    height: Calc(450px * 29/21);
+ 
+   margin: 30px auto;
+  }
+  .fbook .fpage {  
+    width: 450px;
+    height: Calc(450px * 29/21);
+
+  }
