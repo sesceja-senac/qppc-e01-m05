@@ -305,6 +305,12 @@ classes
     border-left: 2px solid orange;
     padding-right: 40px;
 }
+
+.borda{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
 @media screen and (max-width:1366px){
     .rellax{
         max-width: 208px;
