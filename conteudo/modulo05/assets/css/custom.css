@@ -331,6 +331,48 @@ ol.sesc li{
     margin-bottom: 5px;
 }
 
+.painel-exposicao{
+    background-color: #d1e4e5;
+    border-radius: 20px;
+    max-width: 800px;    
+}
+
+.painel-exposicao button{
+    background-color: transparent;
+    border: 0;
+    transform-origin:top;
+    transition: 150ms;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.painel-exposicao button:hover,
+.painel-exposicao button:focus
+{
+    
+    background-color: white;
+    /*box-shadow: 0 15px 15px rgba(255, 255, 255, .3);*/
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.painel-modais-100{
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}
+.painel-modais-100 button{
+ border: 0;
+ background-color: transparent;
+ margin-bottom: 10px;
+}
+.painel-modais-100 button:hover,
+.painel-modais-100 button:focus{
+    transform: scale(1.1);
+}
+.painel-modais-100 button img{
+    max-width: 180px;
+}
 
 @media screen and (max-width:1366px){
     .rellax{
