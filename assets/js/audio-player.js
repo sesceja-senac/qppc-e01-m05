@@ -71,14 +71,14 @@ AudioPlayer = {
 
             btPlay.addEventListener('click', function(){
                 audio.play();
-                btPlay.classList.add('d-none');
-                btPause.classList.remove('d-none')
+                //btPlay.classList.add('d-none');
+                //btPause.classList.remove('d-none')
             })
 
             btPause.addEventListener('click', function(){
                 audio.pause();
-                btPlay.classList.remove('d-none');
-                btPause.classList.add('d-none')
+                //btPlay.classList.remove('d-none');
+                //btPause.classList.add('d-none')
             })  
 
             seek.addEventListener('input', function(){

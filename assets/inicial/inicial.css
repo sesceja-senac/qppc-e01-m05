@@ -22,15 +22,17 @@ html,body{
     color: white;
     display: inline-block;
     font-weight: bolder;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    line-height: 1;
 }
 .sub-title{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     display: inline-block;
     max-width: 540px;
+    line-height: 1;
 }
 
 nav ul{
@@ -108,6 +110,24 @@ nav ul{
     background-image: url(../inicial/img_9.png);
     transition: 400ms;
 }
+
+@media screen and (min-width:1440px){
+    .main-title{
+       
+        font-size: 2.6rem;
+        
+        line-height: 1.2;
+    }
+    .sub-title{
+        font-size: 1.5rem;
+        color: white;
+        display: inline-block;
+        max-width: 540px;
+        line-height: 1.2;
+    }
+    
+}
+
 @media screen and (max-width:1440px){
     .imagens-titulo{
         width: Calc(760px * .95);
@@ -144,7 +164,14 @@ nav ul{
         display: block;
         margin: 10px auto;
         width: 94vw;
-        height: Calc(94vw * 60/76);
-      
+        height: Calc(94vw * 60/76);      
+
+    }
+    .sub-title{
+        font-size: 1.5rem;
+        color: white;
+        display: inline-block;
+        max-width: 540px;
+        line-height: 1.2;
     }
 }

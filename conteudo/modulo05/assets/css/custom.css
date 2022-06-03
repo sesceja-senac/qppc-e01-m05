@@ -344,15 +344,22 @@ ol.sesc li{
     transition: 150ms;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    position: relative;
 }
-.painel-exposicao button:hover,
-.painel-exposicao button:focus
+.painel-exposicao button:hover::before,
+.painel-exposicao button:focus::before
 {
-    
-    background-color: white;
-    /*box-shadow: 0 15px 15px rgba(255, 255, 255, .3);*/
-    border-radius: 10px;
-    padding-bottom: 10px;
+   content: "";
+   position: absolute;
+   top: 42px;
+   left: 12%;
+   width: 76%;
+   
+   border-radius: 10px 10px 0 0;
+   height: 70%;
+   background: rgb(255,255,255);
+   background: linear-gradient(0deg, rgba(255,255,255,0) 17%, rgba(255,255,255,.7) 50%, rgba(255,255,255,.8) 100%);
+   box-shadow: white 0 0 30px;
 }
 
 .painel-modais-100{
@@ -372,6 +379,43 @@ ol.sesc li{
 }
 .painel-modais-100 button img{
     max-width: 180px;
+}
+
+.painel-modais-panorama button,
+.painel-modais-convencoes button{
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    transition: 200ms;
+}
+.painel-modais-panorama button img:nth-child(2){
+    display: none;
+}
+.painel-modais-convencoes button:hover,
+.painel-modais-convencoes button:focus,
+.painel-modais-panorama button:hover, 
+.painel-modais-panorama button:focus 
+{
+    transform: scale(1.05);
+}
+
+.painel-modais-convencoes button:hover img,
+.painel-modais-convencoes button:focus img,
+.painel-modais-panorama button:nth-child(1):hover img,
+.painel-modais-panorama button:nth-child(1):focus img{
+    transform: rotate(-10deg);
+}
+.painel-modais-panorama button:nth-child(2):hover img,
+.painel-modais-panorama button:nth-child(2):focus img{
+    transform: rotate(10deg);
+}
+
+#gaitinha03 .accordion-header .accordion-button{
+    height: 90px;
+    background-color: #00838D;
+}
+#gaitinha03 .accordion-header .accordion-button img{
+    margin-right: 20px;
 }
 
 @media screen and (max-width:1366px){
@@ -433,6 +477,16 @@ ol.sesc li{
         width: 100%;
         padding: 10px;
         padding-top: 90px;        
+    }
+
+    #gaitinha03  .accordion-button:before{
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #gaitinha03 .accordion-button{
+        background-image: none;
     }
 
 }

@@ -98,14 +98,38 @@
 
 /* CUSTOMIZANDO pra uma largura maxima mais perto do normal, usando proporçao de uma folha a4 */
 
+.fbook{
+  background-color: #00838D;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
   .fbook .fpages {
     width: 900px;
     height: Calc(450px * 29/21);
+    transform: scale(.95);
+    
  
    margin: 30px auto;
   }
   .fbook .fpage {  
     width: 450px;
     height: Calc(450px * 29/21);
+
+  }
+
+  #fpages-02.fpages {
+    width: 870px !important;
+    height: Calc(435px * 29/20) !important;
+    transform: scale(.95);
+    
+ 
+   margin: 30px auto;
+  }
+  #fpages-02 .fpage {  
+    width: 435px !important;
+    height: Calc(435px * 29/20) !important;
 
   }
