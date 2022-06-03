@@ -418,6 +418,11 @@ ol.sesc li{
     margin-right: 20px;
 }
 
+
+.no-wrap{
+    white-space:nowrap;
+}
+
 @media screen and (max-width:1366px){
     .rellax{
         max-width: 208px;
@@ -489,7 +494,31 @@ ol.sesc li{
         background-image: none;
     }
 
+    #accordionExample.painel-gaitinha .accordion-button:before{
+        margin-left: -10px;       
+        background-repeat: no-repeat;
+        width: 30px; 
+        top:Calc(50% -15px); 
+        display: block;  
+        left: 20px;
+        position: absolute;   
+    }
+
+    #accordionExample.painel-gaitinha .accordion-button strong{
+        margin: 0;
+        padding: 0;
+    }
+    #accordionExample .accordion-button{
+        background-image: none;
+        height: 60px;
+        display: block;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+
 }
+
+
 
 @media screen and (max-width: 500px){
     .citacao{

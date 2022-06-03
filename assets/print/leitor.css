@@ -863,7 +863,7 @@ iframe, iframe.youtube-pl{
 }
 
 img {
-  max-width: 50% !important;
+  max-width: 80% !important;
 }
 
 figure {
@@ -934,3 +934,6 @@ figcaption {
   max-width: 100% !important;
 }
 
+.no-wrap{
+  white-space:initial;
+}
