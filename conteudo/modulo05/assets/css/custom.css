@@ -423,6 +423,12 @@ ol.sesc li{
     white-space:nowrap;
 }
 
+.zoom-img img{
+    border: 2px solid #00838D;
+    max-width: 70%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+}
+
 @media screen and (max-width:1366px){
     .rellax{
         max-width: 208px;
@@ -498,7 +504,7 @@ ol.sesc li{
         margin-left: -10px;       
         background-repeat: no-repeat;
         width: 30px; 
-        top:Calc(50% -15px); 
+        top:Calc(50% - 10px); 
         display: block;  
         left: 20px;
         position: absolute;   
@@ -510,7 +516,7 @@ ol.sesc li{
     }
     #accordionExample .accordion-button{
         background-image: none;
-        height: 60px;
+        height: auto;
         display: block;
         padding-left: 40px;
         padding-right: 10px;
