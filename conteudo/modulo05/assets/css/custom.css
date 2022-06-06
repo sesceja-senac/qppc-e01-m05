@@ -272,7 +272,28 @@ classes
 }
 */
 .bloco-divisor.img01{
-    background-image: url(../img/background.png);
+    background-image: url(../img/bgs/secao_1.png);
+}
+.bloco-divisor.img02{
+    background-image: url(../img/bgs/secao_2.png);
+}
+.bloco-divisor.img03{
+    background-image: url(../img/bgs/secao_3.png);
+}
+.bloco-divisor.img04{
+    background-image: url(../img/bgs/secao_4.png);
+}
+.bloco-divisor.img05{
+    background-image: url(../img/bgs/secao_5.png);
+}
+.bloco-divisor.img06{
+    background-image: url(../img/bgs/secao_6.png);
+}
+.bloco-divisor.img07{
+    background-image: url(../img/bgs/secao_7.png);
+}
+.bloco-divisor.img08{
+    background-image: url(../img/bgs/secao_8.png);
 }
 .estilo2.bf-transparent{
     padding-top: 15px !important;
