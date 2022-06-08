@@ -295,6 +295,12 @@ classes
 .bloco-divisor.img08{
     background-image: url(../img/bgs/secao_8.png);
 }
+
+.bloco-divisor.img09{
+    background-image:url(../img/bgs/img_bg.jpg);
+    background-position: center;
+}
+
 .estilo2.bf-transparent{
     padding-top: 15px !important;
 }
@@ -444,9 +450,17 @@ ol.sesc li{
     white-space:nowrap;
 }
 
+.zoom-area{
+    background-color: #00838D;
+    border-radius: 10px;
+}
 .zoom-img img{
     border: 2px solid #00838D;
     max-width: 70%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+}
+.zoom-lg-img img{
+    border: 2px solid #00838D;   
     box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
 }
 
